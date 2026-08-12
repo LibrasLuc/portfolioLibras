@@ -1,176 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Lucas — desenvolvedor web com experiência em frontend e backend.">
+    <meta name="theme-color" content="#090b12">
+    <link rel="icon" type="image/png" href="assets/img/favicon-transparent.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon-transparent.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <title>LucasLib Portfólio</title>
+    <title>LucasLib | Desenvolvedor Web</title>
   </head>
-  <body>
-    <header>
-      <div class="container" id="head">
-        <h2>Portfólio</h2>
+  <body class="is-loading">
+    <div class="loader" id="loader" role="status" aria-label="Carregando portfólio">
+      <div class="loader-grid" aria-hidden="true"></div>
+      <div class="loader-content">
+        <span class="loader-kicker">LUCASLIB // SYSTEM</span>
+        <div class="loader-logo">PORT<span>FÓLIO</span></div>
+        <div class="loader-line"><span></span></div>
+        <div class="loader-status"><span>Inicializando interface</span><strong id="loaderPercent">0%</strong></div>
       </div>
-      
-      
-      <div class="container text-center py-4" id="head2">
-        <img src="assets/img/logo.png" alt="LucasLib Logo" id="fteu">
-      </div>
+    </div>
+
+    <header class="site-header">
+      <nav class="container navbar navbar-expand-md" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="LucasLib - início">LUCAS<span>LIB</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav align-items-md-center gap-md-4">
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
- &nbsp;
- &nbsp;
- 
 
     <main>
-
-      
-  
-
-      <section class="hbb animate">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h2 class="text-center text-md-start">Minha Experiência</h2>
-              <p>
-                Oi, sou Lucas! 
-                Sou formado como Técnico em Informática e tenho 3 anos de experiência na área de programação. 
-                Tenho conhecimentos sólidos em PHP, HTML5, CSS, JavaScript e C#, 
-                além de experiência com frameworks modernos. Gosto de desenvolver soluções web e aplicações, 
-                sempre buscando unir eficiência, inovação e qualidade no meu trabalho.
-              </p>
+      <section class="hero" id="inicio">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="container hero-content reveal">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Desenvolvedor Web</p>
+            <h1>Transformo ideias em <em>experiências digitais.</em></h1>
+            <p class="hero-text">Desenvolvo interfaces e aplicações web funcionais, unindo código limpo, usabilidade e uma identidade visual marcante.</p>
+            <div class="hero-actions">
+              <a class="btn-primary-custom" href="#projetos">Explorar projetos <span>↘</span></a>
+              <a class="text-link" href="#sobre">Conheça meu trabalho</a>
             </div>
-            <div class="col-md-6 text-center">
-              <img src="assets/img/conhece.png" alt="Imagem representativa" class="img-fluid rounded">
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-frame">
+              <span class="frame-label">DEV_PROFILE.01</span>
+              <img src="assets/img/logo.png" alt="" fetchpriority="high">
+              <div class="frame-code">&lt;build&gt; web solutions &lt;/build&gt;</div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">SCROLL <span></span></div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">01 / SOBRE</p>
+            <h2>Experiência que conecta<br><span>tecnologia e propósito.</span></h2>
+          </div>
+          <div class="about-grid reveal">
+            <div class="about-image">
+              <img src="assets/img/conhece.png" alt="Ilustração representando conhecimentos em desenvolvimento web" loading="lazy">
+            </div>
+            <div class="about-copy">
+              <p class="lead">Olá, sou Lucas. Sou programador e atuo há 3 anos na área de programação.</p>
+              <p>Tenho experiência no desenvolvimento de soluções web e aplicações, do planejamento da interface à implementação das regras de negócio e banco de dados. Busco criar produtos eficientes, claros e bem construídos.</p>
+              <div class="experience-tag"><strong>03+</strong><span>anos de<br>experiência</span></div>
             </div>
           </div>
         </div>
       </section>
-        <section class="utilidades py-5">
-          <h2 class="text-center mb-4">Utilidades em JS</h2>
-          <div class="container">
-           
-            <div id="utilidadesCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card mx-auto" style="width: 18rem;">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Contador de tempo no site</h5>
-                      <p class="card-text"><div class="tempo-site text-center">
-                   
-                        <p id="tempoSite">00:00:00</p>
-                      </div>
-                      </p>
 
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card mx-auto" style="width: 18rem;">
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Jogo da Velha</h5>
-                      <div class="container">
-                        <div class="board">
-                            <button class="cell" id="cell-0"></button>
-                            <button class="cell" id="cell-1"></button>
-                            <button class="cell" id="cell-2"></button>
-                            <button class="cell" id="cell-3"></button>
-                            <button class="cell" id="cell-4"></button>
-                            <button class="cell" id="cell-5"></button>
-                            <button class="cell" id="cell-6"></button>
-                            <button class="cell" id="cell-7"></button>
-                            <button class="cell" id="cell-8"></button>
-                        </div>
-                        <p id="status">Vez do Jogador X</p>
-                        <button id="reset" onclick="resetGame()">Reiniciar</button>
-                    </div>
-                    </div>
-                  </div>
+      <section class="section skills-section" id="habilidades">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">02 / HABILIDADES</p>
+            <h2>Minha caixa de<br><span>ferramentas.</span></h2>
+          </div>
+          <div class="skills-grid reveal">
+            <article class="skill-panel">
+              <div class="skill-icon">&lt;/&gt;</div>
+              <div>
+                <p class="skill-type">Frontend Skills</p>
+                <h3>Interfaces modernas</h3>
+                <div class="skill-list">
+                  <span>HTML5</span><span>JavaScript</span><span>Bootstrap</span>
                 </div>
               </div>
-        
-              <!-- Controles do carrossel -->
-              <a class="carousel-control-prev" href="#utilidadesCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-              <a class="carousel-control-next" href="#utilidadesCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-              </a>
-            </div>
+            </article>
+            <article class="skill-panel">
+              <div class="skill-icon">{ }</div>
+              <div>
+                <p class="skill-type">Backend Skills</p>
+                <h3>Sistemas e dados</h3>
+                <div class="skill-list">
+                  <span>C#</span><span>PHP</span><span>MySQL</span><span>Python</span>
+                </div>
+              </div>
+            </article>
           </div>
-        </section>
-        
-
-
-
-
-<!-- Pop-ups -->
-<!-- Seção de Projetos -->
-<!-- Seção de Projetos -->
-<section class="projetos py-5">
-  <h2 class="text-center mb-4">Meus Projetos</h2>
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-6 d-flex">
-        <div class="projeto-card text-center flex-grow-1" onclick="abrirPopup('projeto1')">
-          <img src="assets/img/logo2.png" alt="Projeto 1" class="img-fluid rounded">
-          <h5 class="mt-3">Site de loja em PHP</h5>
         </div>
-      </div>
-      <div class="col-md-6 d-flex">
-        <div class="projeto-card text-center flex-grow-1" onclick="abrirPopup('projeto2')">
-          <img src="assets/img/clogo.png" alt="Projeto 2" class="img-fluid rounded">
-          <h5 class="mt-3">Código em C# para equação de 2° grau</h5>
+      </section>
+
+      <section class="section projects-section" id="projetos">
+        <div class="container">
+          <div class="section-heading projects-heading reveal">
+            <div><p class="section-number">03 / PROJETOS</p><h2>Projetos em<br><span>destaque.</span></h2></div>
+            <p>Selecione um projeto para abrir o guia e conhecer seus detalhes.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal" tabindex="0" role="button" data-project="projeto1" aria-label="Abrir projeto Site de loja em PHP">
+              <div class="project-image"><img src="assets/img/logo2.png" alt="Identidade visual do site de loja" loading="lazy"><span class="project-index">01</span></div>
+              <div class="project-info"><div><p>PHP • MySQL • Bootstrap</p><h3>Site de loja em PHP</h3></div><span class="open-icon">↗</span></div>
+            </article>
+            <article class="project-card reveal" tabindex="0" role="button" data-project="projeto2" aria-label="Abrir projeto Equação de segundo grau">
+              <div class="project-image"><img src="assets/img/clogo.png" alt="Logotipo da linguagem C#" loading="lazy"><span class="project-index">02</span></div>
+              <div class="project-info"><div><p>C# • Aplicação</p><h3>Equação de 2º grau</h3></div><span class="open-icon">↗</span></div>
+            </article>
+            <article class="project-card reveal" tabindex="0" role="button" data-project="projeto3" aria-label="Abrir projeto Cemig Web">
+              <div class="project-image"><img src="assets/img/python-logo.png" alt="Logotipo oficial do Python" loading="lazy"><span class="project-index">03</span></div>
+              <div class="project-info"><div><p>Python • JSON</p><h3>Cemig Web</h3></div><span class="open-icon">↗</span></div>
+            </article>
+            <article class="project-card reveal" tabindex="0" role="button" data-project="projeto4" aria-label="Abrir projeto Calendário de Professores">
+              <div class="project-image"><img src="assets/img/calendario-professores.png" alt="Identidade visual do Calendário de Professores" loading="lazy"><span class="project-index">04</span></div>
+              <div class="project-info"><div><p>Python • JavaScript • Batch</p><h3>Calendário de Professores</h3></div><span class="open-icon">↗</span></div>
+            </article>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-</section>
-
-<!-- Pop-ups -->
-<div id="popup-projeto1" class="popup">
-  <div class="popup-content">
-    <button class="close-btn" onclick="fecharPopup('projeto1')">&times;</button>
-    <h3>Projeto 1</h3>
-    <img src="assets/img/tcc2.JPG" alt="Projeto 1" class="img-fluid">
-    <p>Projeto em PHP,CSS,HTML e um pouco de JS.Utilizado em base Bootstrap.O projeto tem base como um site
-que tem um inicio para um resgate de codigo que é efetuado pelo um totem que quando colocado o codigo do totem, é adicionado para sua conta
-   tem login e registro, com os finais dos pontos você pode trocar por itens da loja.</p>
-   <p2>Link do projeto GITHUB: <a href="https://github.com/LibrasLuc/TCC">https://github.com/LibrasLuc/TCC</a> </p2> 
-  </div>
-</div>
-
-<div id="popup-projeto2" class="popup">
-  <div class="popup-content">
-    <button class="close-btn" onclick="fecharPopup('projeto2')">&times;</button>
-    <h3>Código em C# para equação de 2° grau</h3>
-    <img src="assets/img/2grau.JPG" alt="Projeto 2" class="img-fluid">
-    <p>Projeto em total c# com calcúlo de equação de segundo grau de forma automatizada
-      Link do projeto GITHUB: <a href="https://github.com/LibrasLuc/TCC">https://github.com/LibrasLuc/Equacao_Segundo_grau</a>
-    </p>
-  </div>
-</div>
-
-
-
-
-        
+      </section>
     </main>
 
-    <footer class="text-center py-3">
-      <p>&copy; 2025 LucasLib. Todos os direitos reservados.</p>
-    </footer>
+    <footer><div class="container"><a class="brand" href="#inicio">LUCAS<span>LIB</span></a><p>Desenvolvido por Lucas, Never Fade Away • <span id="currentYear"></span></p></div></footer>
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9JUJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-   <script src="assets/js/javas.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="project-modal-backdrop" data-close-modal></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-close-modal aria-label="Fechar projeto">×</button>
+        <p class="modal-number" id="modalNumber"></p>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-tech" id="modalTech"></p>
+        <div class="modal-gallery" id="modalGallery"></div>
+        <p class="modal-description" id="modalDescription"></p>
+        <a class="btn-primary-custom" id="modalLink" href="#" target="_blank" rel="noopener noreferrer">Ver no GitHub <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="image-viewer" id="imageViewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visualizador de imagens">
+      <button class="viewer-close" type="button" aria-label="Fechar imagem">×</button>
+      <button class="viewer-nav viewer-prev" type="button" aria-label="Imagem anterior">‹</button>
+      <figure>
+        <img id="viewerImage" src="" alt="">
+        <figcaption><span id="viewerCaption"></span><strong id="viewerCounter"></strong></figcaption>
+      </figure>
+      <button class="viewer-nav viewer-next" type="button" aria-label="Próxima imagem">›</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/javas.js"></script>
   </body>
 </html>
