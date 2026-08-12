@@ -557,6 +557,109 @@ h1 em {
   font-size: 27px;
   color: var(--cyan);
 }
+
+/* ==================================================
+   Contato
+   ================================================== */
+.contact-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  right: -160px;
+  bottom: -220px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: var(--cyan);
+  filter: blur(150px);
+  opacity: 0.08;
+}
+
+.contact-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: end;
+  padding: 60px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%);
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 60px;
+  width: 100px;
+  height: 2px;
+  background: var(--cyan);
+}
+
+.contact-copy h2 {
+  margin: 14px 0 24px;
+  font: 700 clamp(38px, 5vw, 62px) / 1 var(--display);
+  letter-spacing: -0.055em;
+}
+
+.contact-copy h2 span {
+  color: var(--muted);
+}
+
+.contact-copy > p:last-child {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.contact-email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px 58px 28px 28px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-email:hover,
+.contact-email:focus {
+  color: var(--text);
+  border-color: var(--cyan);
+  transform: translateY(-4px);
+  outline: none;
+}
+
+.contact-label {
+  color: var(--cyan);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.contact-email strong {
+  font-size: clamp(17px, 2vw, 23px);
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  color: var(--yellow);
+  font-size: 28px;
+  transform: translateY(-50%);
+}
 .placeholder-art {
   display: grid;
   place-items: center;
@@ -940,6 +1043,14 @@ footer p {
   }
   .projects-grid {
     gap: 42px;
+  }
+  .contact-card {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 38px 24px;
+  }
+  .contact-card::before {
+    left: 24px;
   }
   .modal-panel {
     padding-top: 75px;
