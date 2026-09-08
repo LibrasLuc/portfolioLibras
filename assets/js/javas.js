@@ -206,6 +206,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   document.querySelectorAll('[data-close-modal]').forEach((element) => element.addEventListener('click', closeProject));
+  document.querySelectorAll('#mainNav .nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      const navigation = document.getElementById('mainNav');
+      if (navigation.classList.contains('show') && window.bootstrap) {
+        bootstrap.Collapse.getOrCreateInstance(navigation).hide();
+      }
+    });
+  });
   imageViewer.querySelector('.viewer-close').addEventListener('click', closeImageViewer);
   imageViewer.querySelector('.viewer-prev').addEventListener('click', () => changeViewerImage(-1));
   imageViewer.querySelector('.viewer-next').addEventListener('click', () => changeViewerImage(1));
